@@ -1,0 +1,97 @@
+* {
+  font-family: sans-serif;
+}
+
+/* Remove as setinhas no Chrome, Edge, Safari */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input::placeholde{
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(86, 104, 183);
+  color: white;
+  border-color: white;
+}
+
+button {
+  color: rgb(86, 104, 183);
+  border: 2px solid rgb(86, 104, 183);
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+button:nth-last-child(2):hover,
+button:nth-last-child(1):hover {
+  background: white;
+  color: tomato;
+  border-color: tomato;
+}
+
+button:nth-last-child(2),
+button:nth-last-child(1) {
+  background: tomato;
+  border-color: white;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente, se quiser */
+  height: 100vh; /* ocupa toda altura da tela */
+  text-align: center; /* centraliza texto dentro dos elementos */
+}
+
+.result-positive {
+  color: green;
+}
+
+.result-negative {
+  color: red;
+}
+
+#resultado-mostrado {
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.666);
+  padding: 10px;
+  margin-bottom: 20px;
+}
